@@ -36,8 +36,8 @@ Users should be able to:
 
 ### 🔗 Links
 
-- 🔧 Solution Repo: [GitHub Repository](https://github.com/callmesophiii/url-shortener)
-- 🌐 Live Site: [View Live on Netlify](https://your-netlify-link.netlify.app)
+- 🔧 Solution Repo: [GitHub Repository](https://github.com/callmesophiii/url-shortening-api-master)
+- 🌐 Live Site: [View Live on Vercel](https://url-shortening-api-master-git-main-callmesophiiis-projects.vercel.app)
 
 ---
 
