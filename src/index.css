@@ -1,0 +1,401 @@
+:root {
+  --cyan: hsl(180, 66%, 49%);
+  --dark-violet: hsl(257, 27%, 26%);
+  --red: hsl(0, 87%, 67%);
+  --gray: hsl(0, 0%, 75%);
+  --grayish-violet: hsl(257, 7%, 63%);
+  --very-dark-blue: hsl(255, 11%, 22%);
+  --very-dark-violet: hsl(260, 8%, 14%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  background-color: #f0f1f6;
+  color: var(--very-dark-blue);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+button {
+  background-color: var(--cyan);
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin: 20px; 
+}
+
+button:hover {
+  background-color: hsl(180, 66%, 60%);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  gap: 2rem 3rem;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  color: var(--grayish-violet);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.auth-buttons .login {
+  background: none;
+  border: none;
+  color: var(--grayish-violet);
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.auth-buttons .signup {
+  background-color: var(--cyan);
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.auth-buttons .signup:hover {
+  background-color: hsl(180, 66%, 60%);
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.header nav ul li {
+  color: var(--grayish-violet);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: white;
+  text-align: left;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--very-dark-violet);
+}
+
+.hero p {
+  font-size: 1.125rem;
+  margin-top: 1rem;
+  color: var(--grayish-violet);
+}
+
+.hero button {
+  margin-top: 2rem;
+}
+
+/* Shorten Form */
+.shorten-form {
+  background-color: var(--dark-violet);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-top: -4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.shorten-form input {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+.shorten-form input.error {
+  border: 2px solid var(--red);
+}
+
+.shorten-form .error-msg {
+  color: var(--red);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+/* Link Cards */
+.link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.link-card {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.link-card p {
+  flex: 1;
+  word-break: break-word;
+}
+
+.link-card a {
+  color: var(--cyan);
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.link-card button {
+  background-color: var(--cyan);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+/* Statistics Section */
+.statistics {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #f0f1f6;
+}
+
+.statistics h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.statistics p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--grayish-violet);
+}
+
+/* Feature Cards Grid */
+.feature-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 4rem;
+  position: relative;
+}
+
+.feature-grid::before {
+  content: '';
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  background: var(--cyan);
+  z-index: 0;
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: left;
+  flex: 1;
+  z-index: 1;
+  position: relative;
+}
+
+.icon-wrapper {
+  background: var(--dark-violet);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.feature-card img {
+  width: 40px;
+  height: 40px;
+}
+
+.feature-card h4 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.feature-card p {
+  color: var(--grayish-violet);
+  font-size: 1rem;
+}
+
+/* CTA Section */
+.cta {
+  background-color: var(--dark-violet);
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+  border-radius: 10px;
+  margin: 3rem 0;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta button {
+  background-color: var(--cyan);
+  color: white;
+  padding: 0.75rem 2rem;
+  margin: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--very-dark-violet);
+  color: white;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-column h4 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.footer-column a {
+  color: var(--grayish-violet);
+  font-size: 0.875rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-socials img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-text {
+    text-align: center;
+  }
+
+  .shorten-form {
+    flex-direction: column;
+  }
+
+  .feature-grid {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .feature-grid::before {
+    width: 10px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+  }
+
+  .feature-card {
+    text-align: center;
+    margin-top: 2rem !important;
+  }
+
+  footer {
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
