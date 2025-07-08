@@ -20,7 +20,7 @@ Users should be able to:
 
 ### 🖼 Screenshot
 
-![Screenshot](./src/assets/screenshot.png)
+![Screenshot](./screenshot.png)
 
 ---
 
